@@ -1,0 +1,23 @@
+[project]
+name = "pit-wall"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastf1>=3.9.0",
+    "matplotlib>=3.11.2",
+    "pandas>=2.3.3",
+]
+
+[project.scripts]
+pit-wall = "pit_wall:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
